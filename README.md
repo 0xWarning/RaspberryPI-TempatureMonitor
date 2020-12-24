@@ -36,7 +36,7 @@ Script.JS (Pi_monitor = true) // Default / switch to false for non raspberry PI
 ## Monitor different device
 ```
 curl -d "{"ID": "DEFAULT","Temp": "{temp}","Time": "{Time}"}" -X POST http://YourLocalIP/AddTemp.php
-curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://YourLocalIP/GetTemP.PHP
+curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://YourLocalIP/GetTemp.PHP
 ```
 
 
