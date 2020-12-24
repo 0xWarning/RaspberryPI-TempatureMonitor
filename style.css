@@ -1,0 +1,40 @@
+body {
+	font-family: Helvetica Neue, Arial, sans-serif;
+	text-align: center;
+	background-color: rgb(19, 19, 19);
+}
+
+.wrapper {
+	max-width: 800px;
+	margin: 50px auto;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 3em;
+	margin: 0 0 0.1em 0;
+}
+
+h2 {
+	font-weight: 200;
+	font-size: 0.9em;
+	margin: 0 0 50px;
+	color: #999;
+}
+
+a {
+	margin-top: 50px;
+	display: block;
+	color: #3e95cd;
+}
+
+canvas {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.title {
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 50px;
+	text-align: center;
+	color: white;
+}
