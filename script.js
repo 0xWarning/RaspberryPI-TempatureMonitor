@@ -16,7 +16,6 @@ var Temp = []; // This is the "Y" axis
 let Pi_monitor = true;
 let wait = 2000;
 
-
 /*
 This is the "Charts.js" default code example
 Here you can change the colour ect if needed , add labels ect
@@ -109,7 +108,6 @@ setInterval(function() {
     oReq.open("GET", "http://192.168.0.40/GetTemp.php");
     oReq.send();
 }, wait);
-
 
 /*
 This function is very simple , all it does is grab the response tempature value
