@@ -29,7 +29,7 @@ Rows (default) : ID (auto increment), Time (Var char length 10) , Temp (int 10)
 ##  Configuration
 ```
 DB.php (add database information here , username , password , table ect)
-Script.JS (Update addresses for web pages PI.php / GetTemp.php)
+Script.JS (update your IP at the top where it says "Server")
 Script.JS (Pi_monitor = true) // Default / switch to false for non raspberry PI
 ```
 
