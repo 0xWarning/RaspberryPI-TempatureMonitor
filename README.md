@@ -31,6 +31,7 @@ Rows (default) : ID (auto increment), Time (Var char length 10) , Temp (int 10)
 DB.php (add database information here , username , password , table ect)
 Script.JS (update your IP at the top where it says "Server")
 Script.JS (Pi_monitor = true) // Default / switch to false for non raspberry PI
+Script.JS (Update device name by changing the variable called "Device")
 ```
 
 ## Monitor different device
