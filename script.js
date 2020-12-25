@@ -4,7 +4,7 @@
 //================================================================================\\
 
 /*
-As you can see here there is 2 arrays a bool and a variable "wait"
+As you can see here there is 2 arrays a bool and 3 variables "wait" / "Server" / "Device"
 The update array stores current times updated (counter)
 The temp array stores the current tempature from SQL db
 The bool is used to add pi tempature or not
@@ -13,9 +13,10 @@ The wait timer is in ms (1,000 ms = 1second)
 */
 let update = [];  // This is the "X" axis
 var Temp = []; // This is the "Y" axis
-let Pi_monitor = true;
-let wait = 2000;
-
+let Pi_monitor = true; // True for raspberry PI / false for custom
+let wait = 2000; // How often tempature will update
+let Server = "http://Add IP here/"; // Add your server IP here :)
+let Device = "RaspberryPI"; // Label name at the top 
 /*
 This is the "Charts.js" default code example
 Here you can change the colour ect if needed , add labels ect
@@ -29,7 +30,7 @@ var myChart = new Chart(ctx, {
         labels: update,
         datasets: [{
             data: Temp,
-            label: "Nulls gaming station",
+            label: Device,
             borderColor: "#3e95cd",
             fill: true,
             lineTension: 0.1,
@@ -59,7 +60,12 @@ var myChart = new Chart(ctx, {
                 },
                 gridLines: {
                     display: false
-                }
+                },
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Temp',
+                    fontColor: "#546372",
+                  }
             }],
         }
     },
@@ -68,7 +74,8 @@ var myChart = new Chart(ctx, {
             display: false,
             scaleLabel: {
                 display: true,
-                labelString: 'Month'
+                labelString: 'Update',
+                fontColor: "#546372",
             },
             gridLines: {
                 display: false
@@ -96,18 +103,19 @@ If raspberry PI mode is enabled , it will first POST the current tempature to th
 */
 setInterval(function() {
     if (Pi_monitor == true) {
-        var d = new Date(); // for now
+        var d = new Date();
         var time = d.getHours() + ":" + d.getMinutes();
         var xhttp = new XMLHttpRequest();
-        xhttp.open("POST", "http://192.168.0.40/pi.php", true);
+        xhttp.open("POST", Server+"pi.php", true);
         xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
         xhttp.send("{\r\n  \"ID\": \"w\",\r\n  \"Temp\": \"88\",\r\n  \"Time\": \"" + time + "\"\r\n}");
     }
     var oReq = new XMLHttpRequest();
     oReq.addEventListener("load", reqListener);
-    oReq.open("GET", "http://192.168.0.40/GetTemp.php");
+    oReq.open("GET", Server +"GetTemp.php");
     oReq.send();
 }, wait);
+
 
 /*
 This function is very simple , all it does is grab the response tempature value
