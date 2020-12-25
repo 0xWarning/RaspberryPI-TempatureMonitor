@@ -22,7 +22,7 @@ put all website files into /var/www/html/
 ## SQL setup (DB)
 ```
 Database name (default) : tempmonitor
-Table name (defaul) :  info
+Table name (default) :  info
 Rows (default) : ID (auto increment), Time (Var char length 10) , Temp (int 10)
 ```
 
