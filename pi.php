@@ -25,7 +25,7 @@ $Temp = $temp_2;
 
 if (($Time != '') && ($Temp != ''))
 {
-    $sql = "INSERT INTO `info`(`ID`, `Time`, `Temp`) VALUES (DEFAULT, '$Time', '$Temp')";
+    $sql = "INSERT INTO `$table`(`ID`, `Time`, `Temp`) VALUES (DEFAULT, '$Time', '$Temp')";
     if ($conn->query($sql) === true)
     {
         $output_json = array(
