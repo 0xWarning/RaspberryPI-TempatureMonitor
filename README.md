@@ -40,8 +40,12 @@ curl -d "{"ID": "DEFAULT","Temp": "{temp}","Time": "{Time}"}" -X POST http://You
 curl -H "Accept: application/xml" -H "Content-Type: application/xml" -X GET http://YourLocalIP/GetTemp.PHP
 ```
 
-
-
+## Clear records automatically
+```
+sudo mysql -u root -p
+SET GLOBAL EVENT_SCHEDULER = ON;  (paste this)
+Execute SQL query -> CREATE EVENT `name` ON SCHEDULE EVERY 1 DAY ON COMPLETION NOT PRESERVE ENABLE DO TRUNCATE 'tblName';
+```
 
 ```
 Admin@hvh.site
