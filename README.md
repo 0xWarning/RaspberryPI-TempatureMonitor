@@ -24,6 +24,7 @@ put all website files into /var/www/html/
 Database name (default) : tempmonitor
 Table name (default) :  info
 Rows (default) : ID (auto increment), Time (Var char length 10) , Temp (int 10)
+Alternatively , load the info.SQL file into phpmyadmin (it will create all the tables / rows)
 ```
 
 ##  Configuration
