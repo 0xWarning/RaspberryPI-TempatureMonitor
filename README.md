@@ -56,7 +56,7 @@ Execute SQL query -> CREATE EVENT `name` ON SCHEDULE EVERY 1 DAY ON COMPLETION N
  - This is a very basic task that uses python to display tempature on a small LED display
  - This uses the tempature php page made previously
  - This uses 'requests' to grab the tempature from the website
- - The only information show is the current tempature value & current time
+ - The only information shown is the current tempature value & current time
 ```
 Great examples and helpful guides for setting up LED display !                           
 [the-raspberry-pi-guy(LCD setup)](https://github.com/the-raspberry-pi-guy/lcd "Pi guy repo")
