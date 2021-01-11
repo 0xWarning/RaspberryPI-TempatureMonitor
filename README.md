@@ -59,8 +59,8 @@ Execute SQL query -> CREATE EVENT `name` ON SCHEDULE EVERY 1 DAY ON COMPLETION N
  - The only information shown is the current tempature value & current time
 ```
 Great examples and helpful guides for setting up LED display !                           
-[the-raspberry-pi-guy(LCD setup)](https://github.com/the-raspberry-pi-guy/lcd "Pi guy repo")
-
+[the-raspberry-pi-guy(LCD setup)](https://github.com/the-raspberry-pi-guy/lcd "Pi guy repo")       
+[Amazon Link for LED display (recommended from google)](https://amzn.to/2LkpoCm "Pi LED purchase")
 
 ## Python LED display (I2C)
 ```
