@@ -47,6 +47,21 @@ sudo mysql -u root -p
 SET GLOBAL EVENT_SCHEDULER = ON;  (paste this)
 Execute SQL query -> CREATE EVENT `name` ON SCHEDULE EVERY 1 DAY ON COMPLETION NOT PRESERVE ENABLE DO TRUNCATE 'tblName';
 ```
+
+## Python + I2C LED display
+![Alt text](https://cdn.discordapp.com/attachments/549238444610682880/797991922705629194/20210111_005311.jpg "Example")
+
+## Information
+```
+ - This is a very basic task that uses python to display tempature on a small LED display
+ - This uses the tempature php page made previously
+ - This uses 'requests' to grab the tempature from the website
+ - The only information show is the current tempature value & current time
+```
+Great examples and helpful guides for setting up LED display !                           
+[the-raspberry-pi-guy(LCD setup)](https://github.com/the-raspberry-pi-guy/lcd "Pi guy repo")
+
+
 ## Python LED display (I2C)
 ```
 * sudo apt install git
@@ -57,9 +72,6 @@ Execute SQL query -> CREATE EVENT `name` ON SCHEDULE EVERY 1 DAY ON COMPLETION N
 * Now add python file (PiTemp.py) to /lcd
 * Python PiTemp.py
 ```
-
-## Image example of LED piTemp 
-![Alt text](https://cdn.discordapp.com/attachments/549238444610682880/797991922705629194/20210111_005311.jpg "Example")
 
 ## Python Configuration
 ```
