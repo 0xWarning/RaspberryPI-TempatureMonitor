@@ -47,6 +47,10 @@ sudo mysql -u root -p
 SET GLOBAL EVENT_SCHEDULER = ON;  (paste this)
 Execute SQL query -> CREATE EVENT `name` ON SCHEDULE EVERY 1 DAY ON COMPLETION NOT PRESERVE ENABLE DO TRUNCATE 'tblName';
 ```
+## Python LED display
+Clear records automatically
+```
+```
 
 ```
 Admin@hvh.site
