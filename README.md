@@ -47,11 +47,36 @@ sudo mysql -u root -p
 SET GLOBAL EVENT_SCHEDULER = ON;  (paste this)
 Execute SQL query -> CREATE EVENT `name` ON SCHEDULE EVERY 1 DAY ON COMPLETION NOT PRESERVE ENABLE DO TRUNCATE 'tblName';
 ```
-## Python LED display
-Clear records automatically
+## Python LED display (I2C)
 ```
+* sudo apt install git
+* cd /home/pi/
+* git clone https://github.com/the-raspberry-pi-guy/lcd.git 
+* cd lcd/
+* sudo ./install.sh
+* Now add python file (PiTemp.py) to /lcd
+* Python PiTemp.py
 ```
 
+## Image example of LED piTemp 
+![Alt text](https://cdn.discordapp.com/attachments/549238444610682880/797991922705629194/20210111_005311.jpg "Example")
+
+## Python Configuration
+```
+# Delay = how often it will update in seconds
+# TempatureURL is the URL that returns the tempature
+# Display LCD backlight enables or disables backlight
+# 0 = backlight disabled | 1 = backlight enabled 
+```
+## 16x2 I2C LCD setup to raspberry PI
+```
+GND on LCD goes to pin 6 on the raspberry pi
+VCC on LCD goes to pin 4 on the raspberry pi
+SDA on LCD goes to pin 3 on the raspberry pi
+SCL on LCD goes to pin 5 on the raspberry pi
+```
+![Alt text](https://www.bigmessowires.com/wp-content/uploads/2018/05/Raspberry-GPIO.jpg "GPIO")
+![Alt text](https://tutorials-raspberrypi.de/wp-content/uploads/20151015_113929-600x338.jpg "LCD 16x2")
 ```
 Admin@hvh.site
 ```
