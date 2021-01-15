@@ -71,6 +71,7 @@ Great examples and helpful guides for setting up LED display !
 * sudo ./install.sh
 * Now add python file (PiTemp.py) to /lcd
 * Python PiTemp.py
+* Optional to just run installer for Github also ^
 ```
 
 ## Python Configuration
