@@ -61,7 +61,7 @@ Execute SQL query -> CREATE EVENT `name` ON SCHEDULE EVERY 1 DAY ON COMPLETION N
 Great examples and helpful guides for setting up LED display !                           
 [the-raspberry-pi-guy(LCD setup)](https://github.com/the-raspberry-pi-guy/lcd "Pi guy repo")       
 [Amazon Link for LED display (recommended from google)](https://amzn.to/2LkpoCm "Pi LED purchase")
-
+[Ebay listings](https://www.ebay.co.uk/sch/i.html?_from=R40&_trksid=p2386202.m570.l1313&_nkw=pi+i2c+led+screen&_sacat=0 "i2c")    
 ## Python LED display (I2C)
 ```
 * sudo apt install git
